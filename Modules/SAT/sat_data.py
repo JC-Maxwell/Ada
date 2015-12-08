@@ -34,6 +34,7 @@ from Modules.General import constants as _Constants
  # |_____/ \____/ \_____|\____/|_|  |_|______|_| \_|  |_| |_____/ 
 
 CHART_OF_ACCOUNTS = 'Chart_of_Accounts' 
+CFDI = 'CFDI' 
 TRIAL_BALANCE = 'Trial_Balance' 
 
 
@@ -89,6 +90,64 @@ DOCUMENT_TRANSLATE = {
 		"level" : "Nivel",
 		"nature" : "Natur"
 	},
+	CFDI : {
+		'version' : 'version',
+		'serie' : 'serie',
+		'folio' : 'folio',
+		'date' : 'fecha',
+		'method_of_payment' : 'formaDePago',
+		'terms_of_payment' : 'condicionesDePago',
+		'subtotal' : 'Subtotal',
+		'discount' : 'Descuento',
+		'plea_discount' : 'MotivoDescuento',
+		'exchange_rate' : 'TipoCambio',
+		'currency' : 'Moneda',
+		'total' : 'Total',
+		'type_of_proof' : 'TipoDeComprobante',
+		'payment_method' : 'MetodoDePago',
+		'instead_expedition' : 'LugarExpedicion',
+		'bank_account' : 'NumCtaPago',
+
+		'seller' : 'Emisor',
+		'name' : 'nombre',
+		'identifier' : 'rfc',
+		'fiscal_address' : 'DomicilioFiscal',
+		'street' : 'calle',
+		'exterior_number' : 'noExterior',
+		'interior_number' : 'noInterior',
+		'col' : 'colonia',
+		'locality' : 'localidad',
+		'references' : 'referencia',
+		'city' : 'municipio',
+		'state' : 'estado',
+		'country' : 'pais',
+		'cp' : 'codigoPostal',
+		'tax_regimen' : 'RegimenFiscal',
+		'regimen' : 'Regimen',
+
+		'buyer' : 'Receptor',
+		'address' : 'Domicilio',
+
+		'concepts' : 'Conceptos',
+		'concept' : 'Concepto',
+		'quantity' : 'cantidad',
+		'unit' : 'unidad',
+		'identifier_number' : 'noIdentificacion',
+		'description' : 'descripcion',
+		'unit_price' : 'valorUnitario',
+		'amount' : 'importe',
+
+		'taxes' : 'Impuestos',
+		'transferreds' : 'Traslados',
+		'withhelds' : 'Retenciones',
+
+		'total_transferred' : 'totalImpuestosTrasladados',
+		'total_withheld' : 'totalImpuestosRetenidos',
+		'transferred' : 'Traslado',
+		'tax' : 'impuesto',
+		'rate' : 'tasa',
+		'withheld' : 'Retencion',
+	},
 	TRIAL_BALANCE : {
 		'version':'Version',
 		'identifier':'RFC', 
@@ -114,17 +173,23 @@ DOCUMENT_TRANSLATE = {
 
 ROOT = {
 	CHART_OF_ACCOUNTS : 'Catalogo',
+	CFDI : 'Comprobante',
 	TRIAL_BALANCE : 'Balanza'	
 }
 
 NAMESPACE = {
 	CHART_OF_ACCOUNTS : 'catalogocuentas',
+	CFDI : 'cfdi',
 	TRIAL_BALANCE : 'BCE'
 }
 
 NSMAP = {
 	CHART_OF_ACCOUNTS : {
 		'catalogocuentas' : 'www.sat.gob.mx/esquemas/ContabilidadE/1_1/CatalogoCuentas',
+		 'xsi' : 'http://www.w3.org/2001/XMLSchema-instance'
+	},
+	CFDI : {
+		'cfdi' : 'http://www.sat.gob.mx/cfd/3',
 		 'xsi' : 'http://www.w3.org/2001/XMLSchema-instance'
 	},
 	TRIAL_BALANCE : {
@@ -135,10 +200,12 @@ NSMAP = {
 
 XSD = {
 	CHART_OF_ACCOUNTS :'www.sat.gob.mx/esquemas/ContabilidadE/1_1/CatalogoCuentas http://www.sat.gob.mx/esquemas/ContabilidadE/1_1/CatalogoCuentas/CatalogoCuentas_1_1.xsd',
+	CFDI :'http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd',
 	TRIAL_BALANCE :'www.sat.gob.mx/esquemas/ContabilidadE/1_1/BalanzaComprobacion http://www.sat.gob.mx/esquemas/ContabilidadE/1_1/BalanzaComprobacion/BalanzaComprobacion_1_1.xsd'
 }
 
 XSLT = {
 	CHART_OF_ACCOUNTS : _Constants.SOURCE_PATH + 'CatalogoCuentas_1_1.xslt',
+	CFDI : _Constants.SOURCE_PATH + 'cadenaoriginal_3_2.xslt',
 	TRIAL_BALANCE : _Constants.SOURCE_PATH + 'BalanzaComprobacion_1_1.xslt'	
 }

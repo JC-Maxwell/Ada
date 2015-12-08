@@ -65,7 +65,7 @@ general = {
 	'logging_format' : '%(asctime)s - [%(levelname)s] - %(module)s - %(funcName)s:%(lineno)d - %(message)s',
 	'logging_level' : 'debug',
 	# Listening data:
-	'pauli_project_private_port' : 5002,# Our project is gonna be listening on this port (a number)
+	'pauli_project_private_port' : 9001,# Our project is gonna be listening on this port (a number)
 	'main_path' : '/ada',# Our project is gonna be listening on this path (/something)
 	# Debugging:
 	'debugging_available' : True,# If set, every change on the project is gonna be updated (a boolean)
@@ -181,6 +181,374 @@ functions = {
 			} # End of accounts
 		},# End of required params
 		instance : _Electronic_Accounting.chart_of_accounts
+	},# End of generate_chart_of_accounts
+
+	'generate_cfdi' : {
+		# Function information:
+		public_function : True,
+		required_params : {# Required params is a "dict_item_specification"
+			'certificates' : {
+				value_type : dict,
+				param_type : obligatory,
+				dict_item_specification : {
+					'cer_file' : {
+						value_type : unicode,
+						param_type : obligatory
+					},
+					'key_file' : {
+						value_type : unicode,
+						param_type : obligatory
+					},
+					'password' : {
+						value_type : unicode,
+						param_type : obligatory
+					}
+				}
+			},
+			'serie' : {
+				value_type : unicode,
+				param_type : optional,
+			},# End of serie
+			'folio' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of folio
+			'date' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of folio
+			'method_of_payment' : {
+				value_type : unicode,
+				param_type : obligatory
+			},# End of method_of_payment
+			'terms_of_payment' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of terms_of_payment
+			'subtotal' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of discount
+			'discount' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of discount
+			'plea_discount' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of plea_discount
+			'exchange_rate' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of exchange_rate
+			'currency' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of currency
+			'total' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of currency
+			'type_of_proof' : {
+				value_type : unicode,
+				param_type : obligatory
+			},# End of type_of_proof
+			'payment_method' : {
+				value_type : unicode,
+				param_type : obligatory
+			},# End of payment_method
+			'instead_expedition' : {
+				value_type : unicode,
+				param_type : obligatory
+			},# End of instead_expedition
+			'bank_account' : {
+				value_type : unicode,
+				param_type : optional
+			},# End of bank_account
+			'seller' : {
+				value_type : dict,
+				param_type : obligatory,
+				dict_item_specification : {
+					'identifier' : {
+						value_type : unicode,
+						param_type : obligatory
+					},
+					'name' : {
+						value_type : unicode,
+						param_type : optional
+					},
+					'fiscal_address' : {
+						value_type : dict,
+						param_type : optional,
+						dict_item_specification : {
+							'street' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+							'exterior_number' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'interior_number' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'col' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'locality' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'references' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'city' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+							'state' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+							'country' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+							'cp' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+						}
+					},#End of fiscal_address
+					'issued_in' : {
+						value_type : dict,
+						param_type : optional,
+						dict_item_specification : {
+							'street' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'exterior_number' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'interior_number' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'col' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'locality' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'references' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'city' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'state' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'country' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+							'cp' : {
+								value_type : unicode,
+								param_type : optional
+							},
+						}
+					},#End of issued_in
+					'tax_regimen':{
+						value_type : dict,
+						param_type : optional,
+						dict_item_specification : {
+							'regimen' : {
+								value_type : unicode,
+								param_type : optional
+							}
+						}
+					},#End of tax_regimen
+				}#End of ListItemSpecification
+			},# End of seller
+			'buyer' : {
+				value_type : dict,
+				param_type : obligatory,
+				dict_item_specification : {
+					'identifier' : {
+						value_type : unicode,
+						param_type : obligatory
+					},
+					'name' : {
+						value_type : unicode,
+						param_type : optional
+					},
+					'address' : {
+						value_type : dict,
+						param_type : optional,
+						dict_item_specification : {
+							'street' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'exterior_number' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'interior_number' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'col' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'locality' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'references' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'city' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'state' : {
+								value_type : unicode,
+								param_type : optional
+							},
+							'country' : {
+								value_type : unicode,
+								param_type : obligatory
+							},
+							'cp' : {
+								value_type : unicode,
+								param_type : optional
+							},
+						}
+					},#Address
+				}#End of ListItemSpecification
+			},# End of buyer
+			'concepts' : {
+				value_type : dict,
+				param_type : obligatory,
+				dict_item_specification : {
+					'concept' : {
+						value_type : list,
+						param_type : obligatory,
+						list_item_specification : {
+							value_type : dict,
+							param_type : obligatory,
+							dict_item_specification : {
+								'quantity' : {
+									value_type : unicode,
+									param_type : obligatory
+								},
+								'unit' : {
+									value_type : unicode,
+									param_type : obligatory
+								},
+								'identifier_number' : {
+									value_type : unicode,
+									param_type : optional
+								},
+								'description' : {
+									value_type : unicode,
+									param_type : obligatory
+								},
+								'unit_price' : {
+									value_type : unicode,
+									param_type : obligatory
+								},
+								'amount' : {
+									value_type : unicode,
+									param_type : obligatory
+								},
+							}#End of dict_item_specification
+						}#End of ListItemSpecification
+					}#End of concept
+				},#End of DictItemSpecification
+			},# End of concepts
+			'taxes' : {
+				value_type : dict,
+				param_type : obligatory,
+				dict_item_specification : {
+					'total_transferred' : {
+						value_type : unicode,
+						param_type : optional
+					},
+					'total_withheld' : {
+						value_type : unicode,
+						param_type : optional
+					},
+					'transferreds' : {
+						value_type : dict,
+						param_type : optional,
+						dict_item_specification : {
+							'transferred' : {
+								value_type : list,
+								param_type : obligatory,
+								list_item_specification : {
+									value_type : dict,
+									param_type : optional,
+									dict_item_specification : {
+										'tax' : {
+											value_type : unicode,
+											param_type : obligatory
+										},
+										'rate' : {
+											value_type : unicode,
+											param_type : obligatory
+										},
+										'amount' : {
+											value_type : unicode,
+											param_type : obligatory
+										},
+									},#End of ListItemSpecification
+								},#End of ListItemSpecification
+							}#End of transferred
+						}#End of dict_item_specification
+					},#End of transferreds
+					'withhelds' : {
+						value_type : dict,
+						param_type : optional,
+						dict_item_specification : {
+							'withheld' : {
+								value_type : list,
+								param_type : obligatory,
+								list_item_specification : {
+									value_type : dict,
+									param_type : optional,
+									dict_item_specification : {
+										'tax' : {
+											value_type : unicode,
+											param_type : obligatory
+										},
+										'amount' : {
+											value_type : unicode,
+											param_type : obligatory
+										},
+									},#End of ListItemSpecification
+								},#End of ListItemSpecification
+							}#End of withheld
+						}#End of dict_item_specification
+					},#End of withhelds
+				},#End of ListItemSpecification
+			},#End of taxes
+		},# End of required params
+		instance : _Electronic_Accounting.cfdi
 	},# End of generate_chart_of_accounts
 
 	'generate_trial_balance' : {

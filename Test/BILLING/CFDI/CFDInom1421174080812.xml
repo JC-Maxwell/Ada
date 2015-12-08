@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante LugarExpedicion="Queretaro" Moneda="MXN" TipoCambio="1" certificado="MIIERzCCAy+gAwIBAgIUMjAwMDEwMDAwMDAyMDAwMDAyMzYwDQYJKoZIhvcNAQEFBQAwggFcMRowGAYDVQQDDBFBLkMuIDIgZGUgcHJ1ZWJhczEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSkwJwYJKoZIhvcNAQkBFhphc2lzbmV0QHBydWViYXMuc2F0LmdvYi5teDEmMCQGA1UECQwdQXYuIEhpZGFsZ28gNzcsIENvbC4gR3VlcnJlcm8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQRGlzdHJpdG8gRmVkZXJhbDESMBAGA1UEBwwJQ295b2Fjw6FuMTQwMgYJKoZIhvcNAQkCDCVSZXNwb25zYWJsZTogQXJhY2VsaSBHYW5kYXJhIEJhdXRpc3RhMB4XDTEyMTAyMzE5MTIyMFoXDTE2MTAyMzE5MTIyMFowgcExKDAmBgNVBAMTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxKDAmBgNVBCkTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxKDAmBgNVBAoTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxFjAUBgNVBC0TDUlVRlQ2MTExMTU5TDMxGzAZBgNVBAUTEklVRlQ2MTExMTVNREZSTk4wOTEMMAoGA1UECxMDY2VyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeFwN9yq9uVbmfKtUQhz/bpz9wiCsRfcMVF2tyDejx/AT7MtNwqeJjkTl53meOHAqmtnhHQ19obo9/VolvGSh+nlx8jr0cscWflVIb/sR/8xKHNKjvdE6IGOfyG1P+PDIOfFnDuh2ExHLIFM9fbJj3IFjdR62lj1Xbd7CKZz7XGQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEAvjq9vFJB0S9bsumew8rGDCFayTUWbpdJOYedw17lVXzx6INY5h/jW21b5zkYPR+ZZFyGIMYb3kYroWeEwkgmLrNCInhqSOsbxg7h/X/AS2z1EtY2NBqVOcr/Y4OI7RRDd/O3Gg+1+ETzrlNStuA8nGJ0BpGwkNsUoxSxyfOdSKxyX3Zk2Zy/dFCpJBvMnh/kO5q8uKVpWXY2OlwdYdJNLRpxoqcpXhMxHx3YujiwOJkEFBN01XQSBsoRazFvDbrWfnMhbZEKWqljSWbU26sg887N4TAlKvgntxrTtF6ww72RIbuGsk1wqpDo9RMWGsCGF/rNneHaMKnQ/vhZwilz2Q==" condicionesDePago="CONTADO" descuento="277.46" fecha="2015-01-13T11:54:40" folio="nom1421174080812" formaDePago="Pago en una sola exhibición" metodoDePago="Efectivo" motivoDescuento="Deducciones nómina" noCertificado="20001000000200000236" sello="TJcizPKdUnfq+ZB9eKS3sB+/YPHUtuIOVtv/SAEXDcWAxARUFiuYBVHsNTH8D+FBslxpfvoNQ8339p4iZQkBURFAqKSshqLnhtRXhcpC0TrvRj6zvbZP3cVjTqraKT0urLyR9jlTLOq+I880G3X+9p0/20OcJ9Zch42hl56gZg4=" serie="A" subTotal="10000.00" tipoDeComprobante="egreso" total="8141.05" version="3.2" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:nomina="http://www.sat.gob.mx/nomina" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd http://www.sat.gob.mx/nomina http://www.sat.gob.mx/sitio_internet/cfd/nomina/nomina11.xsd">
+  <cfdi:Emisor nombre="TERESA REGINA INZUNZA FERNANDEZ" rfc="IUFT6111159L3">
+    <cfdi:DomicilioFiscal calle="Villa de los Reyes" codigoPostal="38028" colonia="Villas de la Esperanza" estado="Guanajuato" localidad="Celaya" municipio="Celaya" noExterior="200" pais="México"/>
+    <cfdi:ExpedidoEn calle="Villa de los Reyes" codigoPostal="38028" colonia="Villas de la Esperanza" estado="Guanajuato" localidad="Celaya" municipio="Celaya" noExterior="200" pais="México"/>
+    <cfdi:RegimenFiscal Regimen="Personas Físicas: Actividades empresariales"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="Manuel Hernandez" rfc="AOOM830927H18">
+    <cfdi:Domicilio pais="México"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1.0" descripcion="PAGO DE NÓMINA MES ABRIL" importe="10000" unidad="SERVICIO" valorUnitario="10000"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosRetenidos="1581.49"/>
+  <cfdi:Complemento>
+    <nomina:Nomina CURP="AOOM830927HGTRRG04" Departamento="Administración" FechaFinalPago="2015-04-15" FechaInicialPago="2015-04-01" FechaPago="2015-04-15" NumDiasPagados="15.2" NumEmpleado="12" PeriodicidadPago="30" RiesgoPuesto="1" TipoRegimen="2" Version="1.1">
+      <nomina:Percepciones TotalExento="0.00" TotalGravado="10000.00">
+        <nomina:Percepcion Clave="001" Concepto="Sueldos, Salarios Rayas y Jornales" ImporteExento="0" ImporteGravado="10000" TipoPercepcion="001"/>
+      </nomina:Percepciones>
+      <nomina:Deducciones TotalExento="0.00" TotalGravado="1858.00">
+        <nomina:Deduccion Clave="001" Concepto="Seguridad Social" ImporteExento="0" ImporteGravado="277.46" TipoDeduccion="001"/>
+        <nomina:Deduccion Clave="002" Concepto="ISR" ImporteExento="0" ImporteGravado="1581.49" TipoDeduccion="002"/>
+      </nomina:Deducciones>
+    </nomina:Nomina>
+  <tfd:TimbreFiscalDigital FechaTimbrado="2015-01-13T12:34:48" UUID="34435027-AAE8-463D-A3D2-92D0D2A5FBF7" noCertificadoSAT="20001000000100005761" selloCFD="TJcizPKdUnfq+ZB9eKS3sB+/YPHUtuIOVtv/SAEXDcWAxARUFiuYBVHsNTH8D+FBslxpfvoNQ8339p4iZQkBURFAqKSshqLnhtRXhcpC0TrvRj6zvbZP3cVjTqraKT0urLyR9jlTLOq+I880G3X+9p0/20OcJ9Zch42hl56gZg4=" selloSAT="EHUidDTb4ClIH1swuYURfbvrM7RXBqFA2PEuNeaspjuFgefEPoTRm9XoB3NRCOEgxZnpYvRvCoTUjlK9/In/i8rwdByizaZmdupnjt5giF3rv3xOa0Dg5yaaWClrFyonh9zx8gMIAo2yMmuFtMdFYh76ThuTO2TTDrPYwXGF6+A=" version="1.0" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/TimbreFiscalDigital/TimbreFiscalDigital.xsd"/></cfdi:Complemento>
+</cfdi:Comprobante>

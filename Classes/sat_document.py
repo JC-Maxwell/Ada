@@ -59,6 +59,17 @@ class Chart_of_Accounts(Sat_document):
 		xml_with_stamp = _Helper.stamp_xml(self.identifier,document_type,xml_without_stamp,certificates)
 		return xml_with_stamp
 
+# CFDI CLASS
+class CFDI(Sat_document):
+	def __init__(self, obj):
+		obj['version'] = "3.2"
+		Sat_document.__init__(self,obj)
+	def get_xml(self,certificates):
+		document_type = type(self).__name__
+		xml_without_stamp = _Helper.generate_simple_xml(self.translate(),document_type)
+		xml_with_stamp = _Helper.stamp_xml(self.seller.identifier,document_type,xml_without_stamp,certificates)
+		return xml_with_stamp
+
 # CHART_OF_ACCOUNTS CLASS
 class Trial_Balance(Sat_document):
 	def __init__(self, obj):
