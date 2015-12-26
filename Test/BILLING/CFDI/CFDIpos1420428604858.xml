@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante LugarExpedicion="Celaya, Guanajuato" Moneda="MXN" TipoCambio="1.00" certificado="MIIERzCCAy+gAwIBAgIUMjAwMDEwMDAwMDAyMDAwMDAyMzYwDQYJKoZIhvcNAQEFBQAwggFcMRowGAYDVQQDDBFBLkMuIDIgZGUgcHJ1ZWJhczEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSkwJwYJKoZIhvcNAQkBFhphc2lzbmV0QHBydWViYXMuc2F0LmdvYi5teDEmMCQGA1UECQwdQXYuIEhpZGFsZ28gNzcsIENvbC4gR3VlcnJlcm8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQRGlzdHJpdG8gRmVkZXJhbDESMBAGA1UEBwwJQ295b2Fjw6FuMTQwMgYJKoZIhvcNAQkCDCVSZXNwb25zYWJsZTogQXJhY2VsaSBHYW5kYXJhIEJhdXRpc3RhMB4XDTEyMTAyMzE5MTIyMFoXDTE2MTAyMzE5MTIyMFowgcExKDAmBgNVBAMTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxKDAmBgNVBCkTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxKDAmBgNVBAoTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxFjAUBgNVBC0TDUlVRlQ2MTExMTU5TDMxGzAZBgNVBAUTEklVRlQ2MTExMTVNREZSTk4wOTEMMAoGA1UECxMDY2VyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeFwN9yq9uVbmfKtUQhz/bpz9wiCsRfcMVF2tyDejx/AT7MtNwqeJjkTl53meOHAqmtnhHQ19obo9/VolvGSh+nlx8jr0cscWflVIb/sR/8xKHNKjvdE6IGOfyG1P+PDIOfFnDuh2ExHLIFM9fbJj3IFjdR62lj1Xbd7CKZz7XGQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEAvjq9vFJB0S9bsumew8rGDCFayTUWbpdJOYedw17lVXzx6INY5h/jW21b5zkYPR+ZZFyGIMYb3kYroWeEwkgmLrNCInhqSOsbxg7h/X/AS2z1EtY2NBqVOcr/Y4OI7RRDd/O3Gg+1+ETzrlNStuA8nGJ0BpGwkNsUoxSxyfOdSKxyX3Zk2Zy/dFCpJBvMnh/kO5q8uKVpWXY2OlwdYdJNLRpxoqcpXhMxHx3YujiwOJkEFBN01XQSBsoRazFvDbrWfnMhbZEKWqljSWbU26sg887N4TAlKvgntxrTtF6ww72RIbuGsk1wqpDo9RMWGsCGF/rNneHaMKnQ/vhZwilz2Q==" descuento="0.00" fecha="2015-01-04T20:31:04" folio="pos1420428604580" formaDePago="Pago en una solo exhibición" metodoDePago="No identificado" noCertificado="20001000000200000236" sello="bc30zSKrv98jwDFxVwbi+7KzKzPQ3H/jaAEttj98orI0ygp/3r8sZT3hxfz2ayKu54XsAT0XaODxqJ23hHxF5es0nteP/eAcVI1RTnLSBotajw4a2pHKUJxkJnnSkIZ1Pl37OR1KLo8Ruvv6bWf6kx9Qozar2FXC1yQJwWQ5a9o=" subTotal="302.00" tipoDeComprobante="ingreso" total="350.32" version="3.2" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:implocal="http://www.sat.gob.mx/implocal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+  <cfdi:Emisor nombre="TERESA REGINA INZUNZA FERNANDEZ" rfc="IUFT6111159L3">
+    <cfdi:DomicilioFiscal calle="Villa de los Reyes" codigoPostal="38028" estado="Guanajuato" municipio="Celaya" noExterior="200" pais="México"/>
+    <cfdi:ExpedidoEn calle="Villa de los Reyes" codigoPostal="38028" colonia="Villas de la Esperanza" estado="Guanajuato" municipio="Celaya" noExterior="200" pais="México"/>
+    <cfdi:RegimenFiscal Regimen="Personas Físicas: Actividades empresariales"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="CREACIONES DE TECNOLOGIA AVANZADA DE MEXICO SA DE CV" rfc="CTA0906187A2">
+    <cfdi:Domicilio calle="Villa de los Reyes" codigoPostal="38020" colonia="Villas de la Esperanza" estado="Guanajuato" municipio="Celaya" noExterior="200" pais="México"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="2" descripcion="Butil Cellosolve" importe="110.00" unidad="N/A" valorUnitario="55.00"/>
+    <cfdi:Concepto cantidad="0.5" descripcion="Reactivo" importe="27.00" unidad="N/A" valorUnitario="54.00"/>
+    <cfdi:Concepto cantidad="4" descripcion="Quita Cochambre" importe="80.00" unidad="N/A" valorUnitario="20.00"/>
+    <cfdi:Concepto cantidad="10" descripcion="Shampo de manos" importe="85.00" unidad="N/A" valorUnitario="8.50"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosRetenidos="0.00" totalImpuestosTrasladados="48.32">
+    <cfdi:Traslados>
+      <cfdi:Traslado importe="17.60" impuesto="IVA" tasa="16"/>
+      <cfdi:Traslado importe="4.32" impuesto="IVA" tasa="16"/>
+      <cfdi:Traslado importe="12.80" impuesto="IVA" tasa="16"/>
+      <cfdi:Traslado importe="13.60" impuesto="IVA" tasa="16"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <implocal:ImpuestosLocales TotaldeRetenciones="0.00" TotaldeTraslados="0.00" version="1.0"/>
+  <tfd:TimbreFiscalDigital FechaTimbrado="2015-01-04T21:29:56" UUID="62E1F20A-121D-4F88-8896-11012E262384" noCertificadoSAT="20001000000100005761" selloCFD="bc30zSKrv98jwDFxVwbi+7KzKzPQ3H/jaAEttj98orI0ygp/3r8sZT3hxfz2ayKu54XsAT0XaODxqJ23hHxF5es0nteP/eAcVI1RTnLSBotajw4a2pHKUJxkJnnSkIZ1Pl37OR1KLo8Ruvv6bWf6kx9Qozar2FXC1yQJwWQ5a9o=" selloSAT="G3UNqiTzulg8Kv56/cr0UQGntzL684g38IjOh2mjkjlfpgeFpThTdU9D5GAScb37mwa6ZS3Sz2nlfYD1Nv/Eomk9ZONAHzNi9jr3oz4GKv+45j4piAg+fYBkvniR6n4Qs9HiZJW9S9YHgyIhb5TCd5tZ8ZupTVg5NTCXmCQ9dU0=" version="1.0" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/TimbreFiscalDigital/TimbreFiscalDigital.xsd"/></cfdi:Complemento>
+</cfdi:Comprobante>

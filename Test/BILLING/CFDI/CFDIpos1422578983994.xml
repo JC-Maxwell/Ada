@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><cfdi:Comprobante LugarExpedicion="Celaya, Guanajuato" Moneda="MXN" TipoCambio="14" certificado="MIIERzCCAy+gAwIBAgIUMjAwMDEwMDAwMDAyMDAwMDAyMzYwDQYJKoZIhvcNAQEFBQAwggFcMRowGAYDVQQDDBFBLkMuIDIgZGUgcHJ1ZWJhczEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMSkwJwYJKoZIhvcNAQkBFhphc2lzbmV0QHBydWViYXMuc2F0LmdvYi5teDEmMCQGA1UECQwdQXYuIEhpZGFsZ28gNzcsIENvbC4gR3VlcnJlcm8xDjAMBgNVBBEMBTA2MzAwMQswCQYDVQQGEwJNWDEZMBcGA1UECAwQRGlzdHJpdG8gRmVkZXJhbDESMBAGA1UEBwwJQ295b2Fjw6FuMTQwMgYJKoZIhvcNAQkCDCVSZXNwb25zYWJsZTogQXJhY2VsaSBHYW5kYXJhIEJhdXRpc3RhMB4XDTEyMTAyMzE5MTIyMFoXDTE2MTAyMzE5MTIyMFowgcExKDAmBgNVBAMTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxKDAmBgNVBCkTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxKDAmBgNVBAoTH1RFUkVTQSBSRUdJTkEgSU5aVU5aQSBGRVJOQU5ERVoxFjAUBgNVBC0TDUlVRlQ2MTExMTU5TDMxGzAZBgNVBAUTEklVRlQ2MTExMTVNREZSTk4wOTEMMAoGA1UECxMDY2VyMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDeFwN9yq9uVbmfKtUQhz/bpz9wiCsRfcMVF2tyDejx/AT7MtNwqeJjkTl53meOHAqmtnhHQ19obo9/VolvGSh+nlx8jr0cscWflVIb/sR/8xKHNKjvdE6IGOfyG1P+PDIOfFnDuh2ExHLIFM9fbJj3IFjdR62lj1Xbd7CKZz7XGQIDAQABox0wGzAMBgNVHRMBAf8EAjAAMAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQUFAAOCAQEAvjq9vFJB0S9bsumew8rGDCFayTUWbpdJOYedw17lVXzx6INY5h/jW21b5zkYPR+ZZFyGIMYb3kYroWeEwkgmLrNCInhqSOsbxg7h/X/AS2z1EtY2NBqVOcr/Y4OI7RRDd/O3Gg+1+ETzrlNStuA8nGJ0BpGwkNsUoxSxyfOdSKxyX3Zk2Zy/dFCpJBvMnh/kO5q8uKVpWXY2OlwdYdJNLRpxoqcpXhMxHx3YujiwOJkEFBN01XQSBsoRazFvDbrWfnMhbZEKWqljSWbU26sg887N4TAlKvgntxrTtF6ww72RIbuGsk1wqpDo9RMWGsCGF/rNneHaMKnQ/vhZwilz2Q==" descuento="0.00" fecha="2015-01-29T17:49:36" folio="pos1422578983994" formaDePago="Pago en una solo exhibición" metodoDePago="Transferencia electrónica" noCertificado="20001000000200000236" sello="0IDtwLAwaTgnDGPJZadCopdxD9zrQlRXkvcd3oHiOkA1UIjCM2nfa8rJ60EFXAPhdYpKM6LwYBccIoQ4qrE6T5kuK7QMcQIJ4L8vYF4QftGNZpXKWWpx2DNPY46c1gthAXu726cUYtdK0sCVYl9kr8iSEixuVYdZEzH9OfWx6OQ=" subTotal="198.28" tipoDeComprobante="ingreso" total="230.00" version="3.2" xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:implocal="http://www.sat.gob.mx/implocal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd">
+  <cfdi:Emisor nombre="TERESA REGINA INZUNZA FERNANDEZ" rfc="IUFT6111159L3">
+    <cfdi:DomicilioFiscal calle="Villa de los Reyes" codigoPostal="38028" estado="Guanajuato" municipio="Celaya" noExterior="200" pais="México"/>
+    <cfdi:ExpedidoEn calle="Villa de los Reyes" codigoPostal="38020" colonia="Villas de la Esperanza" estado="Guanajuato" municipio="Celaya" noExterior="200" pais="México"/>
+    <cfdi:RegimenFiscal Regimen="Personas Físicas: Actividades empresariales"/>
+  </cfdi:Emisor>
+  <cfdi:Receptor nombre="Juan Daniel Rojo Salazar" rfc="ROSJ580329GU7">
+    <cfdi:Domicilio calle="Madero" codigoPostal="38000" colonia="Centro" estado="Guanajuato" municipio="Celaya" noInterior="339" pais="México"/>
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" descripcion="HONORARIOS" importe="198.28" unidad="Piezas" valorUnitario="198.28"/>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosRetenidos="0.00" totalImpuestosTrasladados="31.72">
+    <cfdi:Traslados>
+      <cfdi:Traslado importe="31.72" impuesto="IVA" tasa="16"/>
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <implocal:ImpuestosLocales TotaldeRetenciones="0.00" TotaldeTraslados="0.00" version="1.0"/>
+  <tfd:TimbreFiscalDigital FechaTimbrado="2015-01-29T18:49:48" UUID="8F15615B-8C23-4652-896F-16FBAA077D2D" noCertificadoSAT="20001000000100005761" selloCFD="0IDtwLAwaTgnDGPJZadCopdxD9zrQlRXkvcd3oHiOkA1UIjCM2nfa8rJ60EFXAPhdYpKM6LwYBccIoQ4qrE6T5kuK7QMcQIJ4L8vYF4QftGNZpXKWWpx2DNPY46c1gthAXu726cUYtdK0sCVYl9kr8iSEixuVYdZEzH9OfWx6OQ=" selloSAT="ZHGRaHtzIOvsxIDp5q5UYJFwGyvNVijJe9CMS6apVwQlV9clOBMe13BC7SFZ4hzS1s15J3RZoUZX+96OEA0mhWwgBAsMCRd+3g9vI1PXoYi2QkGdVAwUFhvber1PBdx8u9QGfvjCKRrdPtUXwYzQa0DQig4YeD7gG2dyKeXwJQ0=" version="1.0" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd"/></cfdi:Complemento>
+</cfdi:Comprobante>

@@ -221,7 +221,7 @@ def generate_simple_xml(dictionary,document_type):
 		NSMAP = _SAT_data.NSMAP[document_type]
 		NAMESPACE = _SAT_data.NAMESPACE[document_type]
 		XSD = _SAT_data.XSD[document_type]
-		
+
 		E = ElementMaker(namespace=NSMAP[NAMESPACE],
 						nsmap=NSMAP)
 

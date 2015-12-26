@@ -1,0 +1,60 @@
+{
+	"function" : "generate_cfdi",
+	"params" : {
+		"certificates":{
+			"cer_file" : "IUFT6111159L3_1210231250S.cer",
+			"key_file" : "IUFT6111159L3_1210231250S.key",
+			"password" : "12345678a"
+		},
+		"serie" : "A",
+		"folio" : "1",
+		"date" : "2015-12-02T07:34:49",
+		"method_of_payment" : "Pago en una sola exhibición",
+		"terms_of_payment" : "",
+		"subtotal" : "0",
+		"discount" : "0",
+		"plea_discount" : "",
+		"exchange_rate" : "1.0",
+		"currency" : "MXN",
+		"total" : "1000.00",
+		"type_of_proof" : "ingreso",
+		"payment_method" : "Efectivo",
+		"instead_expedition" : "Celaya, Gto",
+		"bank_account" : "",
+		"seller" : {
+			"identifier" : "IUFT6111159L3",
+			"tax_regimen" : {
+				"regimen" : "Régimen de Incorporación Fiscal"
+			}
+		},
+		"buyer" : {
+			"identifier" : "AAA010101AAA"
+		},
+		"concepts" : {
+			"concept" : [{
+				"quantity" : "1",
+				"unit" : "NA",
+				"description" : "Prueba",
+				"unit_price" : "100",
+				"amount" : "100"
+			}] 
+		},
+		"taxes":{
+			"total_transferred" : "16",
+			"total_withheld" : "16",
+			"transferreds" : {
+				"transferred" :  [{
+					"tax" : "IVA",
+					"rate" : "16",
+					"amount" : "16"
+				}]
+			},
+			"withhelds" : {
+				"withheld" : [{
+					"tax" : "ISR",
+					"amount" : "16"
+				}] 
+			}
+		}
+	}	
+}
