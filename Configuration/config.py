@@ -19,6 +19,7 @@
 from pauli_sdk.Modules import constants as _PAULI_Constants
 from Modules.SAT import electronic_accounting as _Electronic_Accounting
 from Modules.SAT import files_handler as _Files_Handler
+from Modules.Finkok import utilities as _Finkok_Utilities
 
 
 
@@ -283,6 +284,22 @@ functions = {
 			}
 		},# End of required params
 		instance : _Files_Handler.get_type_of_keys
+	},# End of our_public_function
+
+	'get_xml_from_finkok' : {
+		# Function information:
+		public_function : True,
+		required_params : {# Required params is a "dict_item_specification"
+			'identifier' : {
+				value_type : unicode,
+				param_type : obligatory
+			},
+			'uuid' : {
+				value_type : unicode,
+				param_type : optional
+			}
+		},# End of required params
+		instance : _Finkok_Utilities.get_xml
 	},# End of our_public_function
 
 
